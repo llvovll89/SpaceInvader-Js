@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap');
+
+body {
+    position: relative;
+}
+
+#wrap {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #333;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 8px 8px 1px rgba(0, 0, 0, .3);
+}
+
+/* wrap안 새로생길 div */
+#wrap div {
+    width: 20px;
+    height: 20px;
+}
+
+.result-count {
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid #333;
+    font-size: 24px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .1);
+    font-family: 'Dongle', sans-serif;
+}
+
+.result {
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: 1px solid #333;
+    padding: 5px;
+    border-radius: 6px;
+    font-size: 26px;
+    transition: 1s;
+    cursor: pointer;
+    font-family: 'Dongle', sans-serif;
+}
+
+.result:hover {
+    box-shadow: 6px 6px 5px rgba(0, 0, 0, .6);
+}
+
+.invader {
+    background-image: url(../img/invader.png);
+    border-radius: 10px;
+}
+
+/* 조종기(커스텀) */
+.shooter {
+    background-image: url(../img/shoter.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* 공격 빔 */
+.laser {
+    background-image: url(../img/laser.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.boom {
+    background-image: url(../img/boom.png);
+    border-radius: 50%;
+}
+
+#form {
+    text-align: center;
+}
+
+#form .start{
+    margin-top: 20px;
+    padding: 5px;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 5px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, .25);
+    border: none;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .1);
+    font-family: 'Dongle', sans-serif;
+}
+
+#form .start:hover {
+    background: rgba(0, 0, 0, .1);
+}
